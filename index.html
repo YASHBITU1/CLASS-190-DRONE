@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DRONE SIMULATOR</title>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+        <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+        <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js" crossorigin="anonymous"></script>
+        <script src="./control.js"></script>
+        <script src="./obstacles.js"></script>
+        <script src="./collision.js"></script>
+    </head>
+    <body>
+    <a-scene background="color:lightblue" inspector-plugin-recast>
+        <a-sky id="sky" src="./sky.jpg"></a-sky>
+        <a-assets>
+            <a-asset-item id="drone" src="./s9_mini_drone/scene.gltf"></a-asset-item>
+            <a-asset-item id="city" src="./new_york_city._manhattan/scene.gltf"></a-asset-item>
+
+        </a-assets>
+        
+        <a-entity gltf-model="#city" id="background" position="0 0 0" rotation="0 0 0" scale="30 30 30" obstacle ></a-entity>
+        <a-entity id="camera" camera position="0 2 20" look-controls dronecontrol></a-entity>
+        <a-entity>
+            <a-entity id="drone" dronecontrol gltf-model="#drone" position="0 1 17" rotation="0 0 0" scale="0.25 0.25 0.25" collision dynamic-body="mass:0" ></a-entity>
+        </a-entity>
+        <a-entity>
+            <a-entity id="time" position = "23 17 0" text = "font:exo2bold;align:center;width:35;color:white;value:00:00"></a-entity>
+            <a-entity position = "29 17 0" text = "font:aileronsemibold;align:center;width:25;color:yellow;value:TIME\nREMAINING"></a-entity>
+          </a-entity>
+          <a-entity>
+            <a-entity position = "-25 18 0" text = "font:exo2bold;align:center;width:40;color:red;value:DRONE SIMULATOR"></a-entity>
+          </a-entity>
+        <a-entity></a-entity>
+
+
+    </a-scene>
+    </body>
+</html>

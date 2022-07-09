@@ -1,0 +1,11 @@
+Model Information:
+* title:	stylized ww1 plane - Nieuport
+* source:	https://sketchfab.com/3d-models/stylized-ww1-plane-nieuport-fea0970724d9481d909104d72c825aad
+* author:	Sander_Casier (https://sketchfab.com/Sander_Casier)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "stylized ww1 plane - Nieuport" (https://sketchfab.com/3d-models/stylized-ww1-plane-nieuport-fea0970724d9481d909104d72c825aad) by Sander_Casier (https://sketchfab.com/Sander_Casier) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
